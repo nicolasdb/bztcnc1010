@@ -21,12 +21,12 @@
   <property name="customhal" type="int" value="1"/>
   <property name="digitsin" type="float" value="15.0"/>
   <property name="digitsout" type="float" value="15.0"/>
-  <property name="dirhold" type="float" value="20000.0"/>
-  <property name="dirsetup" type="float" value="20000.0"/>
+  <property name="dirhold" type="float" value="8000.0"/>
+  <property name="dirsetup" type="float" value="5000.0"/>
   <property name="drivertype" type="string" value="other"/>
   <property name="floatsin" type="float" value="10.0"/>
   <property name="floatsout" type="float" value="10.0"/>
-  <property name="halui" type="bool" value="False"/>
+  <property name="halui" type="bool" value="True"/>
   <property name="halui_list" type="eval" value="[]"/>
   <property name="ioaddr" type="string" value="0"/>
   <property name="ioaddr2" type="string" value="1"/>
@@ -41,39 +41,39 @@
   <property name="modbus" type="bool" value="False"/>
   <property name="number_pports" type="int" value="1"/>
   <property name="period" type="int" value="25000"/>
-  <property name="pin1" type="string" value="xstep"/>
-  <property name="pin10" type="string" value="unused-input"/>
+  <property name="pin1" type="string" value="spindle-on"/>
+  <property name="pin10" type="string" value="probe-in"/>
   <property name="pin10inv" type="bool" value="False"/>
   <property name="pin11" type="string" value="unused-input"/>
   <property name="pin11inv" type="bool" value="False"/>
-  <property name="pin12" type="string" value="unused-input"/>
+  <property name="pin12" type="string" value="home-y"/>
   <property name="pin12inv" type="bool" value="False"/>
-  <property name="pin13" type="string" value="unused-input"/>
+  <property name="pin13" type="string" value="home-x"/>
   <property name="pin13inv" type="bool" value="False"/>
-  <property name="pin14" type="string" value="ystep"/>
+  <property name="pin14" type="string" value="coolant-flood"/>
   <property name="pin14inv" type="bool" value="False"/>
-  <property name="pin15" type="string" value="unused-input"/>
+  <property name="pin15" type="string" value="home-z"/>
   <property name="pin15inv" type="bool" value="False"/>
-  <property name="pin16" type="string" value="xdir"/>
+  <property name="pin16" type="string" value="unused-output"/>
   <property name="pin16inv" type="bool" value="False"/>
-  <property name="pin17" type="string" value="xenable"/>
+  <property name="pin17" type="string" value="charge-pump"/>
   <property name="pin17inv" type="bool" value="False"/>
   <property name="pin1inv" type="bool" value="False"/>
-  <property name="pin2" type="string" value="spindle-on"/>
+  <property name="pin2" type="string" value="xdir"/>
   <property name="pin2inv" type="bool" value="False"/>
-  <property name="pin3" type="string" value="zstep"/>
+  <property name="pin3" type="string" value="xstep"/>
   <property name="pin3inv" type="bool" value="False"/>
-  <property name="pin4" type="string" value="xenable"/>
+  <property name="pin4" type="string" value="ydir"/>
   <property name="pin4inv" type="bool" value="False"/>
-  <property name="pin5" type="string" value="xenable"/>
+  <property name="pin5" type="string" value="ystep"/>
   <property name="pin5inv" type="bool" value="False"/>
   <property name="pin6" type="string" value="zdir"/>
   <property name="pin6inv" type="bool" value="False"/>
-  <property name="pin7" type="string" value="ydir"/>
+  <property name="pin7" type="string" value="zstep"/>
   <property name="pin7inv" type="bool" value="False"/>
-  <property name="pin8" type="string" value="astep"/>
+  <property name="pin8" type="string" value="unused-output"/>
   <property name="pin8inv" type="bool" value="False"/>
-  <property name="pin9" type="string" value="adir"/>
+  <property name="pin9" type="string" value="unused-output"/>
   <property name="pin9inv" type="bool" value="False"/>
   <property name="pp2_direction" type="int" value="0"/>
   <property name="pp2_pin1" type="string" value="unused-output"/>
@@ -144,8 +144,8 @@
   <property name="spindlepwm2" type="float" value="0.8"/>
   <property name="spindlespeed1" type="int" value="100"/>
   <property name="spindlespeed2" type="int" value="800"/>
-  <property name="stepspace" type="float" value="5000.0"/>
-  <property name="steptime" type="float" value="5000.0"/>
+  <property name="stepspace" type="float" value="1500.0"/>
+  <property name="steptime" type="float" value="1500.0"/>
   <property name="tempexists" type="int" value="0"/>
   <property name="uhomepos" type="int" value="0"/>
   <property name="uhomesw" type="int" value="0"/>
@@ -177,46 +177,46 @@
   <property name="vpulleynum" type="int" value="1"/>
   <property name="vscale" type="int" value="0"/>
   <property name="vsteprev" type="int" value="200"/>
-  <property name="xhomepos" type="float" value="0.0"/>
+  <property name="xhomepos" type="float" value="10.0"/>
   <property name="xhomesw" type="float" value="0.0"/>
-  <property name="xhomevel" type="float" value="1.5"/>
+  <property name="xhomevel" type="float" value="-5.0"/>
   <property name="xlatchdir" type="int" value="0"/>
-  <property name="xleadscrew" type="float" value="5.0"/>
-  <property name="xmaxacc" type="float" value="750.0"/>
-  <property name="xmaxlim" type="float" value="200.0"/>
-  <property name="xmaxvel" type="float" value="25.0"/>
-  <property name="xmicrostep" type="float" value="2.0"/>
+  <property name="xleadscrew" type="float" value="80.0"/>
+  <property name="xmaxacc" type="float" value="150.0"/>
+  <property name="xmaxlim" type="float" value="1000.0"/>
+  <property name="xmaxvel" type="float" value="50.0"/>
+  <property name="xmicrostep" type="float" value="8.0"/>
   <property name="xminlim" type="float" value="0.0"/>
   <property name="xpulleyden" type="float" value="1.0"/>
   <property name="xpulleynum" type="float" value="1.0"/>
-  <property name="xscale" type="float" value="80.0"/>
-  <property name="xsteprev" type="float" value="200.0"/>
-  <property name="yhomepos" type="float" value="0.0"/>
+  <property name="xscale" type="float" value="160.0"/>
+  <property name="xsteprev" type="float" value="1600.0"/>
+  <property name="yhomepos" type="float" value="10.0"/>
   <property name="yhomesw" type="float" value="0.0"/>
-  <property name="yhomevel" type="float" value="1.5"/>
+  <property name="yhomevel" type="float" value="5.0"/>
   <property name="ylatchdir" type="int" value="0"/>
-  <property name="yleadscrew" type="float" value="5.0"/>
-  <property name="ymaxacc" type="float" value="750.0"/>
-  <property name="ymaxlim" type="float" value="200.0"/>
-  <property name="ymaxvel" type="float" value="25.0"/>
-  <property name="ymicrostep" type="float" value="2.0"/>
+  <property name="yleadscrew" type="float" value="80.0"/>
+  <property name="ymaxacc" type="float" value="150.0"/>
+  <property name="ymaxlim" type="float" value="1150.0"/>
+  <property name="ymaxvel" type="float" value="65.0"/>
+  <property name="ymicrostep" type="float" value="8.0"/>
   <property name="yminlim" type="float" value="0.0"/>
   <property name="ypulleyden" type="float" value="1.0"/>
   <property name="ypulleynum" type="float" value="1.0"/>
-  <property name="yscale" type="float" value="80.0"/>
-  <property name="ysteprev" type="float" value="200.0"/>
-  <property name="zhomepos" type="float" value="0.0"/>
-  <property name="zhomesw" type="float" value="0.0"/>
-  <property name="zhomevel" type="float" value="1.5"/>
+  <property name="yscale" type="float" value="160.0"/>
+  <property name="ysteprev" type="float" value="1600.0"/>
+  <property name="zhomepos" type="float" value="130.0"/>
+  <property name="zhomesw" type="float" value="138.0"/>
+  <property name="zhomevel" type="float" value="-1.0"/>
   <property name="zlatchdir" type="int" value="0"/>
-  <property name="zleadscrew" type="float" value="5.0"/>
-  <property name="zmaxacc" type="float" value="750.0"/>
-  <property name="zmaxlim" type="float" value="0.0"/>
-  <property name="zmaxvel" type="float" value="25.0"/>
-  <property name="zmicrostep" type="float" value="2.0"/>
-  <property name="zminlim" type="float" value="-100.0"/>
+  <property name="zleadscrew" type="float" value="40.0"/>
+  <property name="zmaxacc" type="float" value="40.0"/>
+  <property name="zmaxlim" type="float" value="138.0"/>
+  <property name="zmaxvel" type="float" value="35.0"/>
+  <property name="zmicrostep" type="float" value="8.0"/>
+  <property name="zminlim" type="float" value="0.0"/>
   <property name="zpulleyden" type="float" value="1.0"/>
   <property name="zpulleynum" type="float" value="1.0"/>
-  <property name="zscale" type="float" value="80.0"/>
-  <property name="zsteprev" type="float" value="200.0"/>
+  <property name="zscale" type="float" value="320.0"/>
+  <property name="zsteprev" type="float" value="1600.0"/>
 </stepconf>
